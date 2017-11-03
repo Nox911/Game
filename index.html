@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+<header class="game-options">
+<h1 class="game-title">Match Match Game</h1>
+	<form class="options" action="#" method="POST">
+	<fieldset>
+		<legend>Выберите уровень:</legend>
+		<label><input class="set-Level" type="radio" name="level" value=4 checked><span class="level-text">Блок:4*2</span></label>
+		<label><input class="set-Level" type="radio" name="level" value=6><span class="level-text">Блок:4*3</span></label>
+		<label><input class="set-Level" type="radio" name="level" value=8><span class="level-text">Блок:4*4</span></label>
+		</fieldset>
+		<fieldset>
+		<legend>Выберите обложку:</legend>
+		<label><input class="set-Backdraw" type="radio" name="backdraw" value=0 checked><img class="backdraw-image" src="img/backdraw0.png" alt=""></label>
+		<label><input class="set-Backdraw" type="radio" name="backdraw" value=1><img class="backdraw-image" src="img/backdraw1.png" alt=""></label>
+		<label><input class="set-Backdraw" type="radio" name="backdraw" value=2><img class="backdraw-image" src="img/backdraw2.png" alt=""></label>
+		</fieldset>
+		<input class="start-button" type="button" value="Начать игру" OnClick='startGame()'>
+	</form>
+</header>
+	<div class="game-place" id="game-place">
+	</div>
+</body>
+</html>
